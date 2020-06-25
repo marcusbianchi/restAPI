@@ -1,4 +1,4 @@
-package com.example.restAPI.controller;
+package com.example.restAPI.v2.controller;
 
 import com.example.restAPI.domain.Vote;
 import com.example.restAPI.repository.VoteRepository;
@@ -11,7 +11,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.inject.Inject;
 
 @RestController
-public class VoteController {
+@RequestMapping("/v2/")
+public class VoteControllerV2 {
     @Inject
     private VoteRepository voteRepository;
 

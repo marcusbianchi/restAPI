@@ -1,4 +1,4 @@
-package com.example.restAPI.controller;
+package com.example.restAPI.v1.controller;
 
 import com.example.restAPI.domain.Vote;
 import com.example.restAPI.dto.OptionCount;
@@ -16,7 +16,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class ComputeResultController {
+@RequestMapping("/v1/")
+public class ComputeResultControllerV1 {
 
     @Inject
     private VoteRepository voteRepository;

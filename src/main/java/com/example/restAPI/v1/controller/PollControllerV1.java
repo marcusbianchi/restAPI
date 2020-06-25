@@ -1,4 +1,4 @@
-package com.example.restAPI.controller;
+package com.example.restAPI.v1.controller;
 
 import com.example.restAPI.domain.Poll;
 import com.example.restAPI.exception.ResourceNotFoundException;
@@ -12,10 +12,10 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.inject.Inject;
 import javax.validation.Valid;
 import java.net.URI;
-import java.util.Optional;
 
 @RestController
-public class PollController {
+@RequestMapping("/v1/")
+public class PollControllerV1 {
 
     @Inject
     private PollRepository pollRepository;
